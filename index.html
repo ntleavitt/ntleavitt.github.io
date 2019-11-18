@@ -12,18 +12,14 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
         <a-assets>
-			<!--<img id="my-fire" src="https://i.giphy.com/media/nrXif9YExO9EI/giphy.webp">-->
-			<video id="gif-mp4" poster="https://media.giphy.com/media/nrXif9YExO9EI/200_s.gif" style="margin:0;padding:0" autoplay="" loop="" width="500" height="375">
-                <source src="https://media.giphy.com/media/nrXif9YExO9EI/giphy.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-                <img src="https://media.giphy.com/media/nrXif9YExO9EI/giphy.gif" title="Your browser does not support the mp4 video codec.">
-            </video>
+			<img id="my-fire" src="https://media.giphy.com/media/nrXif9YExO9EI/giphy.gif">
         </a-assets>
 		
         <a-marker id="animated-marker" type='barcode' value='6'>
 			
-			<!--<a-entity geometry="primitive: box; width: 2; height: 2; depth: 2" material="">-->
-				  <<a-video src="#gif-mp4"></<a-video>
-            <!--</a-entity>-->
+			<a-entity geometry="primitive: box; width: 2; height: 2; depth: 2" material="">
+				  <a-image src="#my-fire"></<a-image>
+            </a-entity>
         </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
